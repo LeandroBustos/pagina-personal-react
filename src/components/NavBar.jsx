@@ -33,7 +33,7 @@ const NavBar = () => {
           }}>
             <BottomNavigationAction 
                 component={NavLink}
-                to="/"
+                to="/pagina-personal-react"
                 // label="Home" 
                 value="/home" 
                 icon={"Home"} 
