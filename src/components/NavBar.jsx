@@ -14,9 +14,9 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     const {pathname} = useLocation()
-    const paths = pathname.split('/')
-    const [value, setValue] = useState(`${paths[paths.length - 1]}` || "home")
-  
+    const paths = pathname.split("/")
+    const [value, setValue] = useState(`/${paths[paths.length - 1]}` || "/home")
+
     const handleChange = (event, newValue) => {
       setValue(newValue);
     }
@@ -34,28 +34,28 @@ const NavBar = () => {
           }}>
             <BottomNavigationAction 
                 component={NavLink}
-                to={`/pagina-personal-react/${value}`}
+                to="/pagina-personal-react"
                 // label="Home" 
                 value="/home" 
                 icon={"Home"} 
             />
             <BottomNavigationAction 
               component={NavLink}
-              to={`/pagina-personal-react/${value}`}
+              to="/pagina-personal-react/about-me"
               // label="Favorites" 
               value="/about-me" 
               icon={"About me"} 
             />
             <BottomNavigationAction 
               component={NavLink}
-              to={`/pagina-personal-react/${value}`}
+              to="/pagina-personal-react/tecnologies"
               // label="Nearby" 
-              value="/tecnologies" 
+              value="/pagina-personal-react/tecnologies" 
               icon={"Tecnologies"} 
             />
             <BottomNavigationAction 
               component={NavLink}
-              to={`/pagina-personal-react/${value}`}
+              to="/pagina-personal-react/portfolio"
               // label="Folder" 
               value="/portfolio" 
               icon={"Portfolio"} 
