@@ -17,6 +17,8 @@ const NavBar = () => {
     const paths = pathname.split("/")
     const [value, setValue] = useState(`/${paths[paths.length - 1]}` || "/home")
 
+    console.log(pathname, `/${paths[paths.length - 1]}`, paths[paths.length - 1])
+
     const handleChange = (event, newValue) => {
       setValue(newValue);
     }
