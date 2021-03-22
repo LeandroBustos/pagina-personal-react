@@ -21,7 +21,7 @@ function App() {
     <header>
       <div className="App-header">
         <Box display="flex" flexDirection="column" alignItems="center">
-        <a href="/">
+        <a href="/pagina-personal-react">
           <img  src={logo} className="App-logo" alt="logo" />
         </a>
         <h1 style={{display:"flex", flexWrap:"wrap" ,justifyContent:"center", alignContent:"center", alignItems:"center"}}>
