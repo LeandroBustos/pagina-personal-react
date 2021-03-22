@@ -15,7 +15,7 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
     const {pathname} = useLocation()
     const paths = pathname.split('/')
-    const [value, setValue] = useState(`/${paths[paths.length - 1]}` || "/home")
+    const [value, setValue] = useState(`${paths[paths.length - 1]}` || "home")
   
     const handleChange = (event, newValue) => {
       setValue(newValue);
