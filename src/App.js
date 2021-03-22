@@ -39,11 +39,11 @@ function App() {
     </header>
       <Box marginTop="100px" marginBottom="100px" display="flex" justifyContent="center" alignContent="center" alignItems="center">
         <Switch>
-          <Route path="/home" component={Home}/>
-          <Route path="/about-me" component={AboutMe}/>
-          <Route path="/tecnologies" component={(props) => <Tecnologies {...props}/>}/>
-          <Route path="/portfolio" component={Portfolio}/>
-          <Redirect from="/pagina-personal-react" exact to="/home"/>
+          <Route path="/pagina-personal-react/home" component={Home}/>
+          <Route path="/pagina-personal-react/about-me" component={AboutMe}/>
+          <Route path="/pagina-personal-react/tecnologies" component={(props) => <Tecnologies {...props}/>}/>
+          <Route path="/pagina-personal-react/portfolio" component={Portfolio}/>
+          <Redirect from="/pagina-personal-react" exact to="/pagina-personal-react/home"/>
         </Switch>
       </Box>
       <Footer/>
