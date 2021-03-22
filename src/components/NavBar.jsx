@@ -36,28 +36,28 @@ const NavBar = () => {
           }}>
             <BottomNavigationAction 
                 component={NavLink}
-                to="/pagina-personal-react"
+                to="/home"
                 // label="Home" 
                 value="/home" 
                 icon={"Home"} 
             />
             <BottomNavigationAction 
               component={NavLink}
-              to="/pagina-personal-react/about-me"
+              to="/about-me"
               // label="Favorites" 
               value="/about-me" 
               icon={"About me"} 
             />
             <BottomNavigationAction 
               component={NavLink}
-              to="/pagina-personal-react/tecnologies"
+              to="/tecnologies"
               // label="Nearby" 
-              value="/pagina-personal-react/tecnologies" 
+              value="pagina-personal-react/tecnologies" 
               icon={"Tecnologies"} 
             />
             <BottomNavigationAction 
               component={NavLink}
-              to="/pagina-personal-react/portfolio"
+              to="/portfolio"
               // label="Folder" 
               value="/portfolio" 
               icon={"Portfolio"} 
