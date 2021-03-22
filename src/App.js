@@ -43,7 +43,7 @@ function App() {
           <Route path="/about-me" component={AboutMe}/>
           <Route path="/tecnologies" component={(props) => <Tecnologies {...props}/>}/>
           <Route path="/portfolio" component={Portfolio}/>
-          <Redirect from="/" exact to="/home"/>
+          <Redirect from="/pagina-personal-react" exact to="/home"/>
         </Switch>
       </Box>
       <Footer/>
