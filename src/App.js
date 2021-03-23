@@ -21,7 +21,7 @@ function App() {
     <header>
       <div className="App-header">
         <Box display="flex" flexDirection="column" alignItems="center">
-        <a href="/pagina-personal-react">
+        <a href="/">
           <img  src={logo} className="App-logo" alt="logo" />
         </a>
         <h1 style={{display:"flex", flexWrap:"wrap" ,justifyContent:"center", alignContent:"center", alignItems:"center"}}>
@@ -39,10 +39,10 @@ function App() {
     </header>
       <Box marginTop="100px" marginBottom="100px" display="flex" justifyContent="center" alignContent="center" alignItems="center">
         <Switch>
-          <Route path="/home" component={Home}/>
-          <Route path="/about-me" component={AboutMe}/>
-          <Route path="/tecnologies" component={(props) => <Tecnologies {...props}/>}/>
-          <Route path="/portfolio" component={Portfolio}/>
+          <Route exact path="/home" component={Home}/>
+          <Route exact path="/about-me" component={AboutMe}/>
+          <Route exact path="/tecnologies" component={(props) => <Tecnologies {...props}/>}/>
+          <Route exact path="/portfolio" component={Portfolio}/>
           <Redirect from="/" exact to="/home"/>
         </Switch>
       </Box>

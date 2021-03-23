@@ -52,7 +52,7 @@ const NavBar = () => {
               component={NavLink}
               to="/tecnologies"
               // label="Nearby" 
-              value="pagina-personal-react/tecnologies" 
+              value="/tecnologies" 
               icon={"Tecnologies"} 
             />
             <BottomNavigationAction 
