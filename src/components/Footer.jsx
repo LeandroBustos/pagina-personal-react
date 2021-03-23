@@ -53,7 +53,7 @@ const Footer = () => {
                 </Typography>
             </Box>
             <Box className={styles.logos} display="flex" width="100%" flexDirection="row" flexWrap="wrap" justifyContent="flex-end" alignContent="space-evenly" alignItems="center"> 
-                    <CustomHref component={() => <img className={styles.svgLogo} src={github} alt="logo" title="Github logo" style={{maxWidth:"100%", width:80}}/>} href="https://www.linkedin.com/in/leandro-bustos-2b2a73144/" target="blank"/>
+                    <CustomHref component={() => <img className={styles.svgLogo} src={github} alt="logo" title="Github logo" style={{maxWidth:"100%", width:80}}/>} href="https://github.com/LeandroBustos" target="blank"/>
                     <CustomHref component={() => <img className={styles.svgLogo} src={linkedin} alt="logo" title="Linkedin" style={{maxWidth:"100%", paddingLeft:20, width:70}}/>} href="https://www.linkedin.com/in/leandro-bustos-2b2a73144/" target="blank"/>
                     <CustomHref component={() => <img className={styles.svgLogo} src={facebook} alt="logo" title="facebook logo" style={{maxWidth:"100%", width:70}}/>} href="https://www.linkedin.com/in/leandro-bustos-2b2a73144/" target="blank"/>
             </Box>
