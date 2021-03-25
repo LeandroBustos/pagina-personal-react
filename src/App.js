@@ -25,7 +25,7 @@ function App() {
           <img  src={logo} className="App-logo" alt="logo" />
         </a>
         <h1 style={{display:"flex", flexWrap:"wrap" ,justifyContent:"center", alignContent:"center", alignItems:"center"}}>
-          Soy un &nbsp; {<Typist>
+          Soy un&nbsp;{<Typist>
               Backend
               <Typist.Backspace count={7} delay={600} />
               Frontend
