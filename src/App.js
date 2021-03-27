@@ -5,6 +5,7 @@ import './Typist.css'
 //MODULES
 import {Box} from '@material-ui/core'
 import NavBar from './components/NavBar';
+import NavBarButtom from './components/NavBarButtom'
 import {Switch, Route, Redirect} from 'react-router-dom'
 import Typist from 'react-typist';
 
@@ -14,8 +15,11 @@ import AboutMe from './components/AboutMe.jsx'
 import Tecnologies from './components/Tecnologies.jsx'
 import Portfolio from './components/Portfolio.jsx'
 import Footer from './components/Footer.jsx'
+import { useRef } from 'react';
 
 function App() {
+  const appRef = useRef()
+
   return (
     <>
     <header>
@@ -43,22 +47,24 @@ function App() {
                 <Typist.Backspace count={10} delay={3900} />
               </Typist>
             </>
-            }
+          }
         </h1>
         </Box>
       </div>
-      <NavBar/>
+      {/* <NavBar/> */}
     </header>
-      <Box marginTop="100px" marginBottom="100px" display="flex" justifyContent="center" alignContent="center" alignItems="center">
-        <Switch>
-          <Route exact path="/home" component={Home}/>
-          <Route exact path="/about-me" component={AboutMe}/>
-          <Route exact path="/tecnologies" component={(props) => <Tecnologies {...props}/>}/>
-          <Route exact path="/portfolio" component={Portfolio}/>
-          <Redirect from="/" exact to="/home"/>
-        </Switch>
-      </Box>
-      <Footer/>
+    <NavBarButtom asd={appRef}/>
+    <span ref={appRef}></span>
+    <Box marginTop="100px" marginBottom="100px" display="flex" justifyContent="center" alignContent="center" alignItems="center">
+      <Switch>
+        <Route exact path="/home" component={Home}/>
+        <Route exact path="/about-me" component={AboutMe}/>
+        <Route exact path="/tecnologies" component={(props) => <Tecnologies {...props}/>}/>
+        <Route exact path="/portfolio" component={Portfolio}/>
+        <Redirect from="/" exact to="/home"/>
+      </Switch>
+    </Box>
+    <Footer/>
     </>
   );
 }
