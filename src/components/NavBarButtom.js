@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom'
 import {ButtonGroup, Button} from '@material-ui/core'
 
-const NavBarButtom = ({asd}) => {
+const NavBarButtom = ({reference}) => {
     return (
         <ButtonGroup style={{
             width:"100%", 
@@ -17,11 +17,10 @@ const NavBarButtom = ({asd}) => {
             alignContent:"center",
             alignItems:"center"
         }}
-        onClick={() => asd.current.scrollIntoView({behavior: 'smooth'})}
+        onClick={() => reference.current.scrollIntoView({behavior: 'smooth'})}
         variant="contained" color="primary">
-            <Button 
-            style={{width:"25%"}} component={NavLink} to="/home">Home</Button>
-            <Button style={{width:"25%"}}  component={NavLink} to="/about-me">About me</Button>
+            <Button style={{width:"25%"}} component={NavLink} to="/home">Home</Button>
+            <Button style={{width:"25%"}} component={NavLink} to="/about-me">About me</Button>
             <Button style={{width:"25%"}} component={NavLink} to="/tecnologies">Tecnologies</Button>
             <Button style={{width:"25%"}} component={NavLink} to="/portfolio">Portfolio</Button>
         </ButtonGroup>
