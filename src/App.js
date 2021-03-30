@@ -4,7 +4,6 @@ import './normalize.css';
 import './Typist.css'
 //MODULES
 import {Box} from '@material-ui/core'
-import NavBar from './components/NavBar';
 import NavBarButtom from './components/NavBarButtom'
 import {Switch, Route, Redirect} from 'react-router-dom'
 import Typist from 'react-typist';
@@ -51,9 +50,8 @@ function App() {
         </h1>
         </Box>
       </div>
-      {/* <NavBar/> */}
     </header>
-    <NavBarButtom asd={appRef}/>
+    <NavBarButtom reference={appRef}/>
     <span ref={appRef}></span>
     <Box marginTop="100px" marginBottom="100px" display="flex" justifyContent="center" alignContent="center" alignItems="center">
       <Switch>
